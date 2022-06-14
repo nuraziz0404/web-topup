@@ -24,7 +24,7 @@ load [db.sql](https://github.com/nuraziz0404/web-topup/blob/main/db.sql)
 
 ## Config
 
-modify backoffice/.env and portal/.env with your configuration
+modify `backoffice/.env` and `portal/.env` with your configuration
 ```
 DB_HOST = localhost
 DB_NAME = webtopup
