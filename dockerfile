@@ -3,7 +3,7 @@ workdir /var/web
 copy . /var/web
 env TZ=Asia/Jakarta
 
-run apk update > /dev/null; apk add tzdata php7 php7-common php7-pdo_mysql composer --no-cache > /dev/null
+run apk update > /dev/null; apk add tzdata php7 php7-common php7-pdo_mysql composer --no-cache 
 run cp /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # run cat /etc/php8/php.ini | grep 
