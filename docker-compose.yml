@@ -17,7 +17,7 @@ services:
     networks:
       - host
 
-networks:
+network:
   host:
     name: host
     external: true
