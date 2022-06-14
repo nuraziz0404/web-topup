@@ -5,8 +5,7 @@ services:
     image: mariadb:latest
     ports:
       - "3306:3306"
-    networks:
-      - db_net
+    network_mode: host
     environment: { "MARIADB_ROOT_PASSWORD": "123" }
   wt-service:
     container_name: main-server
@@ -14,12 +13,4 @@ services:
     ports:
       - "8080:8080"
       - "8081:8081"
-    networks:
-      - db_net
-      - my_network
-
-networks:
-  my_network:
-    driver: host
-  db_net:
-    driver: custom-driver-1
+    network_mode: host
