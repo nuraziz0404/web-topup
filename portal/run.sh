@@ -1,2 +1,2 @@
 #!/bin/sh
-./yii serve
+./yii serve --docroot=frontend/web --port=8081

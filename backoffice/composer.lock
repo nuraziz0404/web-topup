@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1829e79b2d6bbb2dd7c8997e87feded6",
+    "content-hash": "30d089e37fdce7c2c2d197b343866dc6",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -1539,86 +1539,6 @@
             "time": "2022-02-11T13:12:40+00:00"
         },
         {
-            "name": "yiisoft/yii2-app-basic",
-            "version": "2.0.45",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-app-basic.git",
-                "reference": "36bdb82034c1d9386427a9a1492618ca7505c0ce"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-app-basic/zipball/36bdb82034c1d9386427a9a1492618ca7505c0ce",
-                "reference": "36bdb82034c1d9386427a9a1492618ca7505c0ce",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6.0",
-                "yiisoft/yii2": "~2.0.14",
-                "yiisoft/yii2-bootstrap4": "~2.0.0",
-                "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0"
-            },
-            "require-dev": {
-                "codeception/codeception": "^4.0",
-                "codeception/module-asserts": "^1.0.0",
-                "codeception/module-filesystem": "^1.0.0",
-                "codeception/module-yii2": "^1.0.0",
-                "codeception/specify": "~0.4.6",
-                "codeception/verify": "~0.5.0 || ~1.1.0",
-                "symfony/browser-kit": ">=2.7 <=4.2.4",
-                "yiisoft/yii2-debug": "~2.1.0",
-                "yiisoft/yii2-faker": "~2.0.0",
-                "yiisoft/yii2-gii": "~2.2.0"
-            },
-            "type": "project",
-            "extra": {
-                "yii\\composer\\Installer::postCreateProject": {
-                    "setPermission": [
-                        {
-                            "runtime": "0777",
-                            "web/assets": "0777",
-                            "yii": "0755"
-                        }
-                    ]
-                },
-                "yii\\composer\\Installer::postInstall": {
-                    "generateCookieValidationKey": [
-                        "config/web.php"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Yii 2 Basic Project Template",
-            "homepage": "http://www.yiiframework.com/",
-            "keywords": [
-                "basic",
-                "framework",
-                "project template",
-                "yii2"
-            ],
-            "support": {
-                "forum": "http://www.yiiframework.com/forum/",
-                "irc": "irc://irc.freenode.net/yii",
-                "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-                "source": "https://github.com/yiisoft/yii2",
-                "wiki": "http://www.yiiframework.com/wiki/"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/yiisoft",
-                    "type": "open_collective"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/yiisoft/yii2-app-basic",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2022-02-11T13:26:38+00:00"
-        },
-        {
             "name": "yiisoft/yii2-bootstrap",
             "version": "2.0.11",
             "source": {
@@ -2528,6 +2448,50 @@
                 "source": "https://github.com/Codeception/phpunit-wrapper/tree/8.1.6"
             },
             "time": "2022-05-23T06:22:33+00:00"
+        },
+        {
+            "name": "codeception/specify",
+            "version": "0.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Codeception/Specify.git",
+                "reference": "21b586f503ca444aa519dd9cafb32f113a05f286"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Codeception/Specify/zipball/21b586f503ca444aa519dd9cafb32f113a05f286",
+                "reference": "21b586f503ca444aa519dd9cafb32f113a05f286",
+                "shasum": ""
+            },
+            "require": {
+                "myclabs/deep-copy": "~1.1",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Codeception\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Bodnarchuk",
+                    "email": "davert.php@mailican.com"
+                }
+            ],
+            "description": "BDD code blocks for PHPUnit and Codeception",
+            "support": {
+                "issues": "https://github.com/Codeception/Specify/issues",
+                "source": "https://github.com/Codeception/Specify/tree/master"
+            },
+            "time": "2016-10-21T09:42:00+00:00"
         },
         {
             "name": "codeception/stub",
