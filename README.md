@@ -8,10 +8,20 @@ Website topup:
 - Sausage Man Indonesia
 
 ## Install
+
+clone this repo
 ```
 git clone https://github.com/nuraziz0404/web-topup
 ```
+
 load [db.sql](https://github.com/nuraziz0404/web-topup/blob/main/db.sql)
+
+example:
+```
+mysql -u <username> <dbname> -p < db.sql
+```
+
+Install module
 ```
   cd portal
   cp .env.example .env
