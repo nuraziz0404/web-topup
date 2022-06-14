@@ -8,6 +8,9 @@ Website topup:
 - Sausage Man Indonesia
 
 ## Install
+```
+git clone https://github.com/nuraziz0404/web-topup
+```
 load [db.sql](https://github.com/nuraziz0404/web-topup/blob/main/db.sql)
 ```
   cd portal
