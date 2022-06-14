@@ -1,4 +1,4 @@
-version: '0.1'
+version: "0.1"
 services:
   mariadb-service:
     container_name: db-server
@@ -6,8 +6,8 @@ services:
     mem_limit: 2048m
     ports:
       - "3306:3306"
-#    volumes:
-#      ./website:/usr/share/nginx/html
+  #    volumes:
+  #      ./website:/usr/share/nginx/html
   web-service:
     container_name: main-server
     build: .
@@ -15,5 +15,4 @@ services:
     ports:
       - "8080:8080"
       - "8081:8081"
-    environment:
-      MARIADB_ROOT_PASSWORD:123
+    environment: { "MARIADB_ROOT_PASSWORD": "123" }

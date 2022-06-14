@@ -83,6 +83,12 @@ Backoffice: [Documentation](https://github.com/nuraziz0404/web-topup/blob/main/b
 
 Portal: [Documentation](https://github.com/nuraziz0404/web-topup/blob/portal/backoffice/README.md)
 
+## Docker example
+```
+docker build . -t wt
+docker run -d --network host -p 8080:8080 -p 8081:8081 wt
+```
+
 ## Authors
 
 - [@Nur Aziz](https://github.com/nuraziz0404)
