@@ -48,3 +48,8 @@ DB_PASS =
 Backoffice: [Documentation](https://github.com/nuraziz0404/web-topup/blob/main/backoffice/README.md)
 
 Portal: [Documentation](https://github.com/nuraziz0404/web-topup/blob/portal/backoffice/README.md)
+
+## Authors
+
+- [@Nur Aziz](https://github.com/naziz0404)
+- [@Muhammad Arya Putra Pratama](https://github.com/maryaputrap)
