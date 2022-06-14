@@ -1,1 +1,1 @@
-yii serve
+yii.bat serve

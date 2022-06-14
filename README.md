@@ -77,6 +77,17 @@ DB_PASS =
   sh run.sh
 ```
 
+## If get error
+
+### Could not open input file (windows cmd):
+```
+  cd portal
+  run.bat
+```
+```
+  cd backoffice
+  run.bat
+
 ## Documentation
 
 Backoffice: [Documentation](https://github.com/nuraziz0404/web-topup/blob/main/backoffice/README.md)

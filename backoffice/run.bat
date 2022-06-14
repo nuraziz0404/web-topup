@@ -1,1 +1,1 @@
-yii serve --docroot=frontend/web --port=8081
+yii.bat serve --docroot=frontend/web --port=8081
