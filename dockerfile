@@ -10,6 +10,7 @@ run cp /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 run which phpenmod
 run phpenmon pdo_mysql
+run php --ini
 
 run chmod -R a+rwx .
 run cd portal; composer update -W
