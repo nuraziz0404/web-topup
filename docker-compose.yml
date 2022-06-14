@@ -21,3 +21,5 @@ services:
 networks:
   my_network:
     driver: host
+  db_net:
+    driver: custom-driver-1
