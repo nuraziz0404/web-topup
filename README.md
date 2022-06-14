@@ -36,11 +36,11 @@ DB_PASS =
 
 ```
   cd portal
-  yii serve
+  ./start.sh
 ```
 ```
   cd backoffice
-  yii serve --docroot="frontend/web/" --port=8888
+  ./start.sh
 ```
 
 ## Documentation
