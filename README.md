@@ -19,7 +19,7 @@ load [db.sql](https://github.com/nuraziz0404/web-topup/blob/main/db.sql), exampl
 mysql -u <username> <dbname> -p < db.sql
 ```
 
-# windows (cmd):
+### windows (cmd):
 ```
   cd portal
   copy .env.example .env
@@ -32,7 +32,7 @@ mysql -u <username> <dbname> -p < db.sql
   composer install
   composer update
 ```
-# linux (cmd):
+### linux (cmd):
 ```
   cd portal
   cp .env.example .env
