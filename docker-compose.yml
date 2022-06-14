@@ -1,3 +1,4 @@
+version: "0.1"
 services:
   mariadb-service:
     container_name: db-server
