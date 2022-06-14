@@ -7,8 +7,8 @@ run apk update > /dev/null; apk add tzdata php8 php8-common php8-pdo_mysql compo
 run cp /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 run chmod -R a+rwx .
-run cd portal; rm composer.lock; composer install
-run cd backoffice; rm composer.lock; composer install
+run cd portal; rm composer.lock; composer install --ignore-platform-reqs
+run cd backoffice; rm composer.lock; composer install --ignore-platform-reqs
 
 expose 8080
 expose 8081
