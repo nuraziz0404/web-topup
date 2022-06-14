@@ -3,11 +3,10 @@ workdir /var/web
 copy . /var/web
 env TZ=Asia/Jakarta
 
-run ls -al portal
-run ls -al backoffice
+run apk update > /dev/null; apk add tzdata php81 php81-common --no-cache > /dev/null
+run cp /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
-# run apk update > /dev/null; apk add tzdata php81 php81-common --no-cache > /dev/null
-# run cp /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+expose 8080
+expose 8081
 
-# expose 8080
-# expose 8081
+cmd sh portal/run.sh & sh backoffice/run.sh
