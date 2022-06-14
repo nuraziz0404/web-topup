@@ -8,6 +8,6 @@ phpunit.phar
 /phpunit.xml
 .env
 
-**/assets/**
-**/debug/**
-**/runtime/**
+/**/assets/**
+/**/debug/**
+/**/runtime/**
