@@ -11,7 +11,7 @@ return [
     'class' => 'yii\db\Connection',
     'dsn' => 'mysql:host='.$db_host.';dbname='.$db_name,
     'username' => $db_user,
-    'password' => $db_name,
+    'password' => $db_pass,
     'charset' => 'utf8',
 
     // Schema cache options (for production environment)
