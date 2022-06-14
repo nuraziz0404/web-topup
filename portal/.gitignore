@@ -21,3 +21,4 @@ phpunit.phar
 
 **/assets/**
 **/debug/**
+**/runtime/**
