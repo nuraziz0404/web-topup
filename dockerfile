@@ -13,8 +13,8 @@ run phpenmon pdo_mysql
 run php --ini
 
 run chmod -R a+rwx .
-run cd portal; composer update -W
-run cd backoffice; composer update -W
+run cd portal; composer update --ignore-platform-req=ext-dom
+run cd backoffice; composer update --ignore-platform-req=ext-dom
 
 expose 8080
 expose 8081
