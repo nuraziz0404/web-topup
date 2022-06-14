@@ -6,7 +6,7 @@ services:
     ports:
       - "3306:3306"
     networks:
-      - my_network
+      - db_net
     environment: { "MARIADB_ROOT_PASSWORD": "123" }
   wt-service:
     container_name: main-server
@@ -15,6 +15,7 @@ services:
       - "8080:8080"
       - "8081:8081"
     networks:
+      - db_net
       - my_network
 
 networks:
