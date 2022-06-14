@@ -3,12 +3,8 @@ workdir /var/web
 copy . /var/web
 env TZ=Asia/Jakarta
 
-run apk update > /dev/null; apk add tzdata php8 php8-common php8-pdo_mysql composer --no-cache 
+run apk update > /dev/null; apk add tzdata php8 php8-common php8-pdo_mysql composer --no-cache > /dev/null
 run cp /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
-
-# run cat /etc/php8/php.ini | grep 
-
-run compgen -c|grep php
 
 run chmod -R a+rwx .
 run cd portal; composer update --ignore-platform-req=ext-dom
