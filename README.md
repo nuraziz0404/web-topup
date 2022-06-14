@@ -16,7 +16,7 @@ git clone https://github.com/nuraziz0404/web-topup
 
 load [db.sql](https://github.com/nuraziz0404/web-topup/blob/main/db.sql), example:
 ```
-mysql -u <username> <dbname> -p < db.sql
+mysql -u <username> -p < db-with-create-db.sql
 ```
 
 ### windows (cmd):
