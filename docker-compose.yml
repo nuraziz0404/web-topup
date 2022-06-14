@@ -7,7 +7,7 @@ services:
     networks:
       - my_network
     environment: { "MARIADB_ROOT_PASSWORD": "123" }
-  wt-services:
+  wt-service:
     container_name: main-server
     build: .
     ports:
@@ -17,6 +17,6 @@ services:
       - my_network
 
 networks:
-  default:
-      name: my-network
-      driver: host
+  my_network:
+    name: my_network
+    driver: host
