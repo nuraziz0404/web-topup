@@ -7,7 +7,9 @@ run apk update > /dev/null; apk add tzdata php81 php81-common php81-pdo_mysql co
 run cp /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # run cat /etc/php8/php.ini | grep 
-run php --ini
+
+run which phpenmod
+run phpenmon pdo_mysql
 
 run chmod -R a+rwx .
 run cd portal; composer update -W
