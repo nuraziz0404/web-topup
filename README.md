@@ -8,7 +8,7 @@ Website topup:
 - Sausage Man Indonesia
 
 ## Install
-
+load [db.sql](https://github.com/nuraziz0404/web-topup/blob/main/db.sql)
 ```
   cd portal
   cp .env.example .env
@@ -45,4 +45,6 @@ DB_PASS =
 
 ## Documentation
 
-[Documentation](https://linktodocumentation)
+Backoffice: [Documentation](https://github.com/nuraziz0404/web-topup/blob/main/backoffice/README.md)
+
+Portal: [Documentation](https://github.com/nuraziz0404/web-topup/blob/portal/backoffice/README.md)
