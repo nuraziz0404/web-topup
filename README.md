@@ -61,11 +61,11 @@ DB_PASS =
 ### windows (cmd):
 ```
   cd portal
-  run
+  run.bat
 ```
 ```
   cd backoffice
-  run
+  run.bat
 ```
 ### linux (cmd):
 ```
@@ -76,17 +76,6 @@ DB_PASS =
   cd backoffice
   sh run.sh
 ```
-
-## If get error
-
-### Could not open input file (windows cmd):
-```
-  cd portal
-  run.bat
-```
-```
-  cd backoffice
-  run.bat
 
 ## Documentation
 
