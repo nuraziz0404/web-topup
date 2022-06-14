@@ -3,20 +3,18 @@ services:
   mariadb-service:
     container_name: db-server
     image: mariadb:latest
+    network_mode: host
     ports:
       - "3306:3306"
     environment: { "MARIADB_ROOT_PASSWORD": "123" }
-    networks:
-      - host
+    
   wt:
     container_name: main-server
     build: .
+    network_mode: host
     ports:
       - "8080:8080"
       - "8081:8081"
-    networks:
-      - host
-
 network:
   host:
     name: host
