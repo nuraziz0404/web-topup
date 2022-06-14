@@ -19,5 +19,4 @@ services:
 
 networks:
   my_network:
-    name: my_network
     driver: host
