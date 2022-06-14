@@ -58,13 +58,23 @@ DB_PASS =
 
 ## Start
 
+### windows (cmd):
 ```
   cd portal
-  ./start.sh
+  run
 ```
 ```
   cd backoffice
-  ./start.sh
+  run
+```
+### linux (cmd):
+```
+  cd portal
+  sh run.sh
+```
+```
+  cd backoffice
+  sh run.sh
 ```
 
 ## Documentation
