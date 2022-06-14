@@ -2,19 +2,15 @@ version: "0.1"
 services:
   mariadb-service:
     container_name: db-server
-    image: mariadb:10.4
-    mem_limit: 2048m
+    image: mariadb:latest
     ports:
       - "3306:3306"
     environment: { "MARIADB_ROOT_PASSWORD": "123" }
     networks:
       - host
-  #    volumes:
-  #      ./website:/usr/share/nginx/html
   web-service:
     container_name: main-server
     build: .
-    mem_limit: 2048m
     ports:
       - "8080:8080"
       - "8081:8081"
